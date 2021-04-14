@@ -1,0 +1,230 @@
+/* COMMON */
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
+
+.seoul-common-gnb {
+    width: 100%;
+    height: 48px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 400;
+    background: #fff;
+}
+
+.seoul-common-gnb .seoul-gnb-holder {
+    width: 1152px;
+    height: 48px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.seoul-common-gnb .seoul-gnb-holder .seoul-gnb-link {
+    float: left;
+    position: relative;
+}
+
+.seoul-common-gnb .seoul-gnb-holder .seoul-gnb-link a {
+    display: block;
+    width: 105px;
+    height: 27px;
+    background: url(https://www.seoul.go.kr/seoulgnb/images/icon_set_common.png);
+    background-position: -5px -165px;
+    background-repeat: no-repeat;
+    text-indent: -999px;
+}
+
+.seoul-common-gnb .seoul-gnb-holder dl.seoul-gnb-news {
+    position: absolute;
+    left: 179px;
+    display: flex;
+    align-items: center;
+    top: 50%;
+    margin-top: -5px;
+}
+
+.seoul-common-gnb .seoul-gnb-holder dl.seoul-gnb-news dt a.seoul-gnb-icon-notice {
+    float: left;
+    display: block;
+    width: 17px;
+    height: 11px;
+    background: url(https://www.seoul.go.kr/seoulgnb/images/ico-sprite-common-gnb.png);
+    background-position: -1px -45px;
+    background-repeat: no-repeat;
+    text-indent: -999px;
+    padding: 0 0 0 5px;
+}
+
+.seoul-common-gnb .seoul-gnb-holder dl.seoul-gnb-news dd a {
+    overflow: hidden;
+    display: block;
+    float: left;
+    width: 100%;
+    text-indent: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-decoration: none;
+    color: #575757;
+    font-size: 14px;
+}
+
+.seoul-common-gnb .seoul-gnb-holder dl.seoul-gnb-menu {
+    position: absolute;
+    right: 0;
+    font-size: 14px;
+    color: #575757;
+    display: block;
+}
+
+.seoul-common-gnb .seoul-gnb-holder dl.seoul-gnb-menu dd {
+    float: left;
+    padding: 0 10px;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    border-top: 1px solid rgb(196, 197, 197);
+    position: relative;
+    z-index: 1000;
+    font-weight: 300;
+}
+
+header div.inner {
+    width: 1090px;
+    margin: 0 auto;
+    height: 70px;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+header .main__menu {
+    z-index: 1;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+header .main__menu .item .item__name {
+    padding: 25px 0px;
+    margin: 0 30px;
+    font-size: 20px;
+    font-weight: 500;
+    height: 70px;
+    box-sizing: border-box;
+}
+
+header .main__menu .item:hover .item__name {
+    border-bottom: 3px solid #f36E21;
+    color: #f36E21;
+    box-sizing: border-box;
+}
+
+header .main__menu .item .item__contents {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    padding: 5px 0;
+    background-color: #fff;
+    transform: translateY(-100%);
+    transition: .4s;
+    display: none;
+}
+
+header .main__menu .item:hover .item__contents {
+    display: block;
+    transform: translateY(0%);
+    transition: .4s;
+}
+
+header .main__menu .item .item__contents .contents__menu {
+    background-color: #fff;
+}
+
+header .main__menu .item .item__contents .contents__menu>div {
+    height: 265px;
+    width: 1090px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+}
+
+header .main__menu .item .item__contents .contents__menu>div strong {
+    color: rgb(89, 89, 89);
+    font-size: 20px;
+    font-weight: 400;
+    width: 220px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 5px;
+}
+
+header .main__menu .item .item__contents .contents__menu>div>ul {
+    border-left: 1px solid rgb(219, 219, 219);
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 95%;
+}
+
+header .main__menu .item .item__contents .contents__menu>div>ul>li {
+    display: list-item;
+}
+
+header .main__menu .item .item__contents .contents__menu>div>ul>li h4 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #2f3743;
+}
+
+header .main__menu .item .item__contents .contents__menu>div>ul>li ul {
+    display: flex;
+    font-size: 15px;
+    font-weight: 300;
+    color: rgb(89, 89, 89);
+    overflow: hidden;
+    display: block;
+}
+
+header .main__menu .item .item__contents .contents__menu>div>ul>li h4 {
+    padding-bottom: 8px;
+}
+
+header .main__menu .item .item__contents .contents__menu>div>ul>li ul li {
+    float: left;
+    display: list-item;
+    margin-right: 15px;
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+header .main__menu .item .item__contents .contents__menu>div>ul>li ul li a {
+    display: inline-block;
+    background: url("https://botanicpark.seoul.go.kr/front/img/ico_bul01.png");
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    padding-left: 6px;
+    color: #2f3743;
+}
+
+header .inner a.btn--eng {
+    margin-right: 20px;
+}
